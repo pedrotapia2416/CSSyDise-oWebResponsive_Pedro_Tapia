@@ -3,36 +3,120 @@ body{
   font-family: 'Dancing Script', cursive;
   background-color: #02010a;
   color: white;
+}
+#wrapper1{
   width: 100%;
-  margin-left : 0px;
-  margin-right : 0px;
-  padding : 0px;
+
+}
+#wrapper2{
+  width: 100%;
+  display: block;
+
 }
 /*Header*/
-.header{
-  width: 100%;
-  background-color: #5b7989;
-  border-radius: 10px 10px 0px 0px;
-  color: white;
+#wrapper1 .cabecera{
+ border-radius: 10px 10px 0px 0px;
+ background-color: #5b7989;
+ display: flex;
+ align-items: center;
+ width: 100%;
+
 }
-.header{
+header{
+  width: 70%;
+  color: white;
   text-shadow: 2px 2px 2px #02010a;
-  display: flex;
+  text-align: center;
+  float: left;
 }
 h1 {
-  text-align: right;
-}
-h2{
   text-align: left;
-}
-.cabecera{
-  width: 80%;
-  border-left:20px;
+  margin-left: 20px;
 }
 #menu li{
+  width: 30%;
+  float: none;
   list-style: none;
-  width: 20%;
+  display: inline;
+  justify-content: center;
+  padding: 10px;
+
 }
+
+/*Section*/
+section article{
+  box-sizing: border-box;
+  display: flex;
+  float: left;
+  text-align: center;
+  width: 100%;
+  }
+
+article figure img{
+  width:100%;
+  box-shadow: 2px 0px 0px 0px #02010a;
+   border: black 1px solid ;
+}
+#imgcentral{
+  background-color: #82c3a6;
+	width: 100%;
+  height: auto;
+}
+#wrapper2 .secundaria article {
+  background-color: #d5c75f;
+  }
+#wrapper2 .paisajes article {
+    background-color: #d5c75f;
+    }
+#wrapper2 .retratos article {
+        background-color: #d5c75f;
+        }
+#imgsecizquierda{
+  width: 50%;
+  height: auto;
+}
+#imgsecderecha{
+  width: 50%;
+  height: auto;
+}
+
+#wrapper2 section #imgcentral {
+  background-color: #82c3a6;
+}
+#imgsecizquierda img{
+  box-shadow: 2px 0px 0px 0px #02010a;
+}
+#imgsecderecha img{
+  box-shadow: 2px 0px 0px 0px #02010a;
+}
+/*Animaciones Imagenes*/
+#imgtango img:hover {
+  transform: translate(20px, -5px) ;
+  transition: 2s;
+  box-shadow: 5px 5px 2px 0px rgba(130,195,166,1);
+}
+#imgpuertomadero img:hover {
+  transform: rotate(10deg);
+  transition: 2s;
+  box-shadow: 5px 5px 2px 0px rgba(130,195,166,1);
+}
+
+
+/*Footer*/
+footer{
+  width: 100%;
+  display: flex;
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  }
+
+footer ul li{
+  list-style: none;
+}
+footer,  a:link, a:visited {
+ 	text-decoration: none;
+   color: black;
+ }
 
 /*Hipervinculos*/
  a {outline: 0;}
@@ -42,87 +126,37 @@ h2{
 	text-decoration: none;
   color: white;
 }
-
-
-/*Contenido*/
-
-/*Imagenes adaptativas*/
-.imgadaptativo{
-  width:100%;
-}
-/*article*/
-
-article
-{
-  box-sizing: border-box;
-  float:left;
-	width: 100%;
-  height: 400px;
-	text-align: center;
-}
-.imagencentral{
-  background-color: #82c3a6;
-	width: 100%;
-  height: auto;
-}
-.imagensecizquierda{
-	width: 50%;
-  height: auto;
+/**/
+#img1{
+  width: 33.33%;
 
 }
-.imagensecderecha{
-	width: 50%;
-  height: auto;
-}
-.section2{
-  display: block;
-}
- .section2 .secundaria article {
-  background-color: #d5c75f;
-}
-
-.imagensecizquierda img{
-  box-shadow: 10px 10px 5px 0px rgba(2,1,10,1);
-  border: 2px solid black;
-  display: block;
-}
-.imagensecderecha img{
-box-shadow: 10px 10px 5px 0px rgba(2,1,10,1);
-  border: 2px solid black;
-  display: block;
-}
-/*Imagenes Pagina Principal*/
-
-#imgtango img:hover {
-  transform: translate(20px, -5px) ;
-  transition: 2s;
-  border: 1px;
-  box-shadow: 5px 5px 2px 0px rgba(130,195,166,1);
+#img2{
+  width: 33.33%;
 
 }
-#imgpuertomadero img:hover {
-  transform: rotate(10deg);
-  transition: 2s;
-  border: 1px;
-  box-shadow: 5px 5px 2px 0px rgba(130,195,166,1);
+#img3{
+  width: 33.33%;
+}
+#img4{
+  width: 33.33%;
 
 }
-/*Images pagina Paisajes y retratos*/
-.contenidopaisaje{
-  display: block;
-}
-.contenedorpaisaje article {
- background-color: #d5c75f;
-}
-div img{
-  width: 100%;
+#img5{
+  width: 33.33%;
 
 }
+#img6{
+  width: 33.33%;
+
+}
+/*Efectos Imagenes*/
+
 .imgblur img{
   -webkit-filter: blur(10px);
   filter:blur(10px);
   height: auto;
-  display: block;
+  display: inline-flex;
 
 
 }
@@ -130,7 +164,7 @@ div img{
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   height: auto;
-  display: block;
+  display: inline-flex;
 
 
 }
@@ -138,96 +172,99 @@ div img{
   -webkit-filter: sepia(90%);
   filter: sepia(90%);
   height: auto;
-  display: block;
+  display: inline-flex;
 }
 .base{
   height: auto;
-  display: block;
-}
-/*footer*/
-.footercontenedor {
-width: 100%;
-display: inline-flex;
-background-color: #C6d5c5;
-border-radius: 0px 0px 10px 10px;
-}
-.footercontenedor ul{
-  float: left;
-  list-style: none;
-  align-items: center;
-  width: 100%;
-  text-align: left;
-  color: black;
-}
-footer,  a:link, a:visited {
- 	text-decoration: none;
-   color: black;
- }
-}
-h1 {
-  text-align: left;
+  display: inline-flex;
 }
 
-/*media queri*/
+/*Animacion*/
+.contenido{
+  transition: background 2s;
+  animation: Animacionpagina 2s;
+}
+@-webkit-keyframes Animacionpagina{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+
+/*Responsive*/
+
 @media screen and (min-width: 900px){
 	.contenido{
-    width: 100%;
-  }
-.contenedorpaisaje{
-  display: flex;
-}
-
-}
-@media screen and (max-width: 900px){
-body{
+  width: 900px;
+  margin : 0px;
   margin-left : auto;
   margin-right : auto;
-  padding : 0px;
-  width: 100%;
   }
-  .header{
+}
+@media screen and (max-width: 899px){
+.contenido{
+    width: 100%;
+  }
+#wrapper1 .cabecera{
     display: inline-block;
   }
-  h1 {
+header{
+    width:100%;
     text-align: center;
   }
-  .cabecera{
+
+#menu li{
     width: 100%;
+    float: none;
   }
-  .nav > ul{
-    display: inline-flex;
-    align-items: center;
-    list-style: none;
-    width: 100%;
+  nav > ul {
+    display: flex;
+    justify-content: center;
+  }
+
+#wrapper2{
+  width: 100%;
+  margin: 0 auto;
+  }
+#imgcentral{
+  width: 100%;
+  }
+#imgsecizquierda{
+  width: 100%;
+  }
+#imgsecderecha{
+  width: 100%;
+  }
+
+footer{
+  display: inline-block;
+}
+
+/*Adaptativo paisajes*/
+    #img1{
+      width: 100%;
+    }
+    #img2{
+      width: 100%;
+    }
+    #img3{
+      width: 100%;
+    }
+    #img4{
+      width: 100%;
+    }
+    #img5{
+      width: 100%;
+    }
+    #img6{
+      width: 100%;
     }
 
-.contenido .header{
-		width: 100%;
-	}
-	.imagencentral{
-	width: 100%;
-	}
-	.imagensecizquierda{
-	width: 100%;
-	}
-	.imagensecderecha{
-	width: 100%;
-	}
-  .footercontenedor{
-    display: inline-block;
-  }
-  /*imagenes*/
-.imgblur{
-  width: 100%;
-}
-.gris{
-  width: 100%;
-}
-.sepia{
-  width: 100%;
-}
-.base{
-  width: 100%;
-}
 
 }
